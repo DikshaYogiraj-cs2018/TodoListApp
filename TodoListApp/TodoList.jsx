@@ -5,13 +5,6 @@ import TodoForm from './TodoForm';
 import { Box, Typography } from '@mui/material';
 import { useState, useEffect } from 'react';
 
-// const initialTodos = [
-//     { id: 1, text: "walk the dog", completed: false },
-//     { id: 2, text: "walk the cat", completed: true },
-//     { id: 3, text: "walk the fish", completed: false },
-//     { id: 4, text: "walk the chicken", completed: true },
-//     { id: 5, text: "walk the elephant", completed: true },
-// ];
 const getInitialData = () => {
     const data = JSON.parse(localStorage.getItem("todos"));
     if (!data) return [];
